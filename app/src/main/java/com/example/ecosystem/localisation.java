@@ -27,7 +27,7 @@ import org.osmdroid.util.GeoPoint;
 public class localisation extends FragmentActivity implements OnMapReadyCallback {
 
 
-
+//coucoumarco
     private GoogleMap mMap;
 
     @Override

@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context="com.appsnipp.profiledesigns.ProfileActivity"
+
+    tools:context="com.example.ecosystem.ProfileActivity"
     android:background="@color/profileBackground">
-
-
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_above="@id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
@@ -51,34 +56,7 @@
                     android:textSize="28dp"
                     android:textStyle="bold"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:textSize="12dp"
-                    android:textStyle="bold"/>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_gravity="bottom"
-                    android:layout_marginTop="20dp"
-                    android:background="@color/profileBackground">
-
-                    <View
-                        android:layout_alignParentTop="true"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:background="@drawable/profile_bk"/>
-
-                    <TextView
-                        android:text="Back to\nHome"
-                        style="@style/profileStyledBackButton" />
-                </RelativeLayout>
-
             </LinearLayout>
-
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
@@ -88,12 +66,11 @@
                 app:popupTheme="@style/AppTheme.PopupOverlay" />
 
         </android.support.design.widget.CollapsingToolbarLayout>
-
     </android.support.design.widget.AppBarLayout>
-
 
     <include layout="@layout/content_profile" />
 
+</LinearLayout>
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="match_parent"
@@ -104,5 +81,5 @@
         app:menu="@menu/my_navigation_items"
         tools:layout_editor_absoluteX="0dp" />
 
+</android.support.design.widget.CoordinatorLayout>
 
-</RelativeLayout>

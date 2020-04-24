@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.appsnipp.profiledesigns.ProfileActivity"
+    tools:context="com.example.ecosystem.ProfileActivity"
     tools:showIn="@layout/profile">
 
     <LinearLayout
@@ -14,8 +14,7 @@
         android:orientation="vertical"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_above="@id/navigation">
+        android:layout_marginRight="20dp">
 
         <TextView
             style="@style/headerText"
@@ -54,13 +53,12 @@
                 style="@style/profileDetailsTextMain"/>
 
             <TextView
-                android:text="+075534657"
+                android:text="+0765431232"
                 android:layout_toRightOf="@id/mobileImageView"
                 style="@style/profileDetailsMiniText" />
 
         </RelativeLayout>
 
-        <View style="@style/proifleDetailsView" />
 
 
         <View style="@style/proifleDetailsView" />
@@ -76,14 +74,11 @@
                 style="@style/profileDetailsTextMain" />
 
             <TextView
-                android:text="Aulney-Sous-Bois"
+                android:text="Aulney-sous-Bois"
                 android:layout_toRightOf="@id/addressImageView"
                 style="@style/profileDetailsMiniText" />
 
         </RelativeLayout>
-
-
-
 
 
 

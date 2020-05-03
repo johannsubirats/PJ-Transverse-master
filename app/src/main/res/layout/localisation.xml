@@ -10,9 +10,14 @@
         android:id="@+id/Btnlocalisation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="test"
-        android:layout_centerInParent="true"
-        android:textAllCaps="false"/>
+        android:text="Stat"
+        android:layout_alignParentTop="true"
+        android:textAllCaps="false"
+        android:bottomRightRadius="8dp"
+        android:bottomLeftRadius="8dp"
+        android:topRightRadius="8dp"
+        android:topLeftRadius="8dp"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -24,7 +29,7 @@
 
         <SearchView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
 
         <fragment xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools"

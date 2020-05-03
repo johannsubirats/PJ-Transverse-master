@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.FragmentActivity;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -29,24 +30,34 @@ public class localisation extends FragmentActivity implements OnMapReadyCallback
 
 //coucoumarco
     private GoogleMap mMap;
-
+    private Button BtnMove;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.localisation);
 
+        BtnMove = findViewById(R.id.Btnlocalisation); //bouton vers stat balade
+        BtnMove.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                moveToActivityStat();
+            }
+        });
 
         BottomNavigationView bottomNavigationView;
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(navListener);
         bottomNavigationView.setSelectedItemId(R.id.imageButton2);
 
-
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
     }
 
+    private void moveToActivityStat(){
+        Intent intent = new Intent(localisation.this, Stat_balade.class);
+        startActivity(intent);
+    }
 
 
     public void onMapReady(GoogleMap googleMap) {

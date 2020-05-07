@@ -14,7 +14,7 @@
             android:id="@+id/date"
             android:layout_width="0dp"
             android:layout_height="51dp"
-            android:text="Historique"
+            android:text="Statistique"
             android:textAlignment="center"
             android:textSize="45dp"
             android:visibility="visible"

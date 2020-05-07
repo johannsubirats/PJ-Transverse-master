@@ -1,5 +1,5 @@
 package com.example.ecosystem;
 
-class Stat_balade {
+public class Stat_balade {
 
 }

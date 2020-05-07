@@ -25,14 +25,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.219" />
 
-        <Button
-            android:id="@+id/btngocalendar"
-            android:layout_width="266dp"
-            android:layout_height="47dp"
-            android:text="Go to calendar"
-            tools:layout_editor_absoluteX="47dp"
-            tools:layout_editor_absoluteY="8dp" />
-        
 
         <fragment
             android:layout_width="match_parent"

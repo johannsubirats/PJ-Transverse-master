@@ -14,11 +14,14 @@ import android.view.View;
 public class ProfileActivity extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.profile);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+
+        BottomNavigationView bottomNavigationView;
+        bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
+        bottomNavigationView.setSelectedItemId(R.id.imageButton3);
+        bottomNavigationView.setOnNavigationItemSelectedListener(navListener);
 
     }
 
@@ -30,20 +33,24 @@ public class ProfileActivity extends AppCompatActivity {
 
                     switch (item.getItemId()) {
 
+
+                        case R.id.imageButton:
+                            Intent produit0 = new Intent(ProfileActivity.this, Stat_balade.class);
+                            startActivity(produit0);
+                            break;
+                        case R.id.imageButton1:
+                            Intent produit1 = new Intent(ProfileActivity.this, photo.class);
+                            startActivity(produit1);
+                            break;
                         case R.id.imageButton2:
                             Intent produit2 = new Intent(ProfileActivity.this, localisation.class);
                             startActivity(produit2);
                             break;
                         case R.id.imageButton3:
+
                             break;
-                        case R.id.imageButton:
-                            Intent produit4 = new Intent(ProfileActivity.this, recherche.class);
-                            startActivity(produit4);
-                            break;
-                        case R.id.imageButton1:
-                            Intent produit5 = new Intent(ProfileActivity.this, logocentral.class);
-                            startActivity(produit5);;
-                            break;
+
+
                     }
 
                     return true;

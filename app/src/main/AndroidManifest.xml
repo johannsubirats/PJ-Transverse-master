@@ -23,7 +23,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.ProfileTheme">
         <uses-library android:name="org.apache.http.legacy" android:required="false" />
-        <activity android:name=".MainActivity"/>
 
         <activity android:name=".SplashScreen">
             <intent-filter>
@@ -41,28 +40,12 @@
                 android:value=".MainActivity" />
         </activity>
 
-        <activity android:name=".recherche"
-            android:label="Recherche"
-            android:theme="@style/AppTheme.ProfileTheme">
-            <meta-data
-                android:name="android.support.PARENT.ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-
-        <activity android:name=".logocentral"
-            android:label="Logocentral"
-            android:theme="@style/AppTheme.ProfileTheme">
-            <meta-data
-                android:name="android.support.PARENT.ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-
         <activity
             android:name=".ProfileActivity"
             android:label="@string/title_activity_profile"
             android:theme="@style/AppTheme.ProfileTheme">
         </activity>
-        <activity android:name=".produit"
+        <activity android:name=".photo"
             android:label="Produit"
             android:theme="@style/AppTheme.ProfileTheme">
             <meta-data

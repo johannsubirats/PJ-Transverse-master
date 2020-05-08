@@ -55,7 +55,7 @@ public class localisation extends FragmentActivity implements OnMapReadyCallback
     }
 
     private void moveToActivityStat(){
-        Intent intent = new Intent(localisation.this, Stat_balade.class);
+        Intent intent = new Intent(localisation.this, localisation.class);
         startActivity(intent);
     }
 
@@ -92,19 +92,21 @@ public class localisation extends FragmentActivity implements OnMapReadyCallback
 
                     switch (item.getItemId()) {
 
-                        case R.id.imageButton2:
+
+                        case R.id.imageButton:
+                            Intent produit0 = new Intent(localisation.this, Stat_balade.class);
+                            startActivity(produit0);
                             break;
                         case R.id.imageButton1:
-                            Intent produit3 = new Intent(localisation.this, MainActivity.class);
-                            startActivity(produit3);
+                            Intent produit1 = new Intent(localisation.this, photo.class);
+                            startActivity(produit1);
                             break;
-                        case R.id.imageButton:
-                            Intent produit4 = new Intent(localisation.this, recherche.class);
-                            startActivity(produit4);
+                        case R.id.imageButton2:
+
                             break;
                         case R.id.imageButton3:
-                            Intent produit5 = new Intent(localisation.this, ProfileActivity.class);
-                            startActivity(produit5);;
+                            Intent produit3 = new Intent(localisation.this, ProfileActivity.class);
+                            startActivity(produit3);;
                             break;
                     }
 

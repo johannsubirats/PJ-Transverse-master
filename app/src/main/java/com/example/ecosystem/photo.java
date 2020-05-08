@@ -38,8 +38,7 @@ public class photo extends AppCompatActivity {
                             startActivity(produit0);
                             break;
                         case R.id.imageButton1:
-                            Intent produit1 = new Intent(photo.this, photo.class);
-                            startActivity(produit1);
+
                             break;
                         case R.id.imageButton2:
                             Intent produit2 = new Intent(photo.this, localisation.class);

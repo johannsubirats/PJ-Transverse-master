@@ -32,6 +32,11 @@
             tools:layout_editor_absoluteX="-16dp"
             tools:layout_editor_absoluteY="79dp" />
 
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
     </android.support.constraint.ConstraintLayout>
 
 <android.support.design.widget.BottomNavigationView

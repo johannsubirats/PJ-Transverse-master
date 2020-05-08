@@ -1,5 +1,14 @@
 package com.example.ecosystem;
 
-public class Stat_balade {
+import android.os.Bundle;
+import java.util.Calendar;
+import android.support.v7.app.AppCompatActivity;
+
+public class Stat_balade extends AppCompatActivity{
+
+    @Override
+    protected void onCreate(Bundle savedInstance){
+        super.onCreate(savedInstance);
+    }
 
 }

@@ -12,12 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <Toolbar
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:Color="@android:color/holo_blue_dark"
-            tools:ignore="MissingConstraints" />
-
         <TextView
             android:id="@+id/date"
             android:layout_width="169dp"

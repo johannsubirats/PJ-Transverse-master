@@ -10,18 +10,16 @@
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@android:color/holo_blue_light">
+        android:layout_height="match_parent">
 
         <TextView
-            android:background="@android:color/holo_blue_light"
             android:id="@+id/date"
             android:layout_width="169dp"
             android:layout_height="74dp"
             android:textSize="25dp"
             android:textAlignment="center"
             android:text="Calendrier"
-            android:textColor="@android:color/background_light"
+            android:textColor="@android:color/black"
             android:textStyle="bold"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="121dp"
@@ -30,7 +28,6 @@
 
         <CalendarView
             android:id="@+id/calendrier"
-            android:background="@android:color/background_light"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:ignore="MissingConstraints"

@@ -74,13 +74,13 @@ public class localisation extends FragmentActivity implements OnMapReadyCallback
         polyline1.setTag("A");
 
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(48.7774, 2.3532), 16));
-        LatLng maison = new LatLng(48.7774, 2.3532);
+        LatLng maison = new LatLng(48.77749, 2.35349);
         googleMap.addMarker(new MarkerOptions().position(maison)
-                .title("Marker in my home"));
+                .title("Mon p'tit chien"));
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(maison));
-        LatLng  destination = new LatLng(48.7776, 2.35361);
+        LatLng  destination = new LatLng(48.7775, 2.35350);
         googleMap.addMarker(new MarkerOptions().position(destination)
-                .title("Marker where my dog goes"));
+                .title("Son chien ami, double-cliquez pour l'ajouter à vos amis"));
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(destination));
 
     }

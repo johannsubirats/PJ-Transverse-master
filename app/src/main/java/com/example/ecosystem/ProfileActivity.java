@@ -4,12 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-import android.view.View;
 
 public class ProfileActivity extends AppCompatActivity {
 
@@ -20,7 +16,7 @@ public class ProfileActivity extends AppCompatActivity {
 
         BottomNavigationView bottomNavigationView;
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
-        bottomNavigationView.setSelectedItemId(R.id.imageButton3);
+        bottomNavigationView.setSelectedItemId(R.id.imageButton4);
         bottomNavigationView.setOnNavigationItemSelectedListener(navListener);
 
     }
@@ -34,19 +30,19 @@ public class ProfileActivity extends AppCompatActivity {
                     switch (item.getItemId()) {
 
 
-                        case R.id.imageButton:
-                            Intent produit0 = new Intent(ProfileActivity.this, Stat_balade.class);
-                            startActivity(produit0);
-                            break;
                         case R.id.imageButton1:
-                            Intent produit1 = new Intent(ProfileActivity.this, photo.class);
+                            Intent produit1 = new Intent(ProfileActivity.this, calendrier.class);
                             startActivity(produit1);
                             break;
                         case R.id.imageButton2:
-                            Intent produit2 = new Intent(ProfileActivity.this, localisation.class);
+                            Intent produit2 = new Intent(ProfileActivity.this, photo.class);
                             startActivity(produit2);
                             break;
                         case R.id.imageButton3:
+                            Intent produit3 = new Intent(ProfileActivity.this, localisation.class);
+                            startActivity(produit3);
+                            break;
+                        case R.id.imageButton4:
 
                             break;
 

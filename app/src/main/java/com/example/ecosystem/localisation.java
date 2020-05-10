@@ -1,20 +1,15 @@
 package com.example.ecosystem;
 
 import android.content.Intent;
-import android.graphics.Color;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.FragmentActivity;
-import android.util.Log;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
@@ -28,7 +23,7 @@ import com.google.android.gms.maps.model.PolylineOptions;
 public class localisation extends FragmentActivity implements OnMapReadyCallback {
 
 
-//coucoumarco
+
     private GoogleMap mMap;
     private Button BtnMove;
     @Override
@@ -36,18 +31,12 @@ public class localisation extends FragmentActivity implements OnMapReadyCallback
         super.onCreate(savedInstanceState);
         setContentView(R.layout.localisation);
 
-        BtnMove = findViewById(R.id.Btnlocalisation); //bouton vers stat balade
-        BtnMove.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                moveToActivityStat();
-            }
-        });
+
 
         BottomNavigationView bottomNavigationView;
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(navListener);
-        bottomNavigationView.setSelectedItemId(R.id.imageButton2);
+        bottomNavigationView.setSelectedItemId(R.id.imageButton3);
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -127,20 +116,20 @@ public class localisation extends FragmentActivity implements OnMapReadyCallback
                     switch (item.getItemId()) {
 
 
-                        case R.id.imageButton:
-                            Intent produit0 = new Intent(localisation.this, Stat_balade.class);
-                            startActivity(produit0);
-                            break;
                         case R.id.imageButton1:
-                            Intent produit1 = new Intent(localisation.this, photo.class);
+                            Intent produit1 = new Intent(localisation.this, calendrier.class);
                             startActivity(produit1);
                             break;
                         case R.id.imageButton2:
-
+                            Intent produit2 = new Intent(localisation.this, photo.class);
+                            startActivity(produit2);
                             break;
                         case R.id.imageButton3:
-                            Intent produit3 = new Intent(localisation.this, ProfileActivity.class);
-                            startActivity(produit3);;
+
+                            break;
+                        case R.id.imageButton4:
+                            Intent produit4 = new Intent(localisation.this, ProfileActivity.class);
+                            startActivity(produit4);;
                             break;
                     }
 

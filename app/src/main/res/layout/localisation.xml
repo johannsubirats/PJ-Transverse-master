@@ -6,17 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/Btnlocalisation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:bottomLeftRadius="16dp"
-        android:bottomRightRadius="16dp"
-        android:src="@drawable/stat"
-        android:textAllCaps="false"
-        android:topLeftRadius="16dp"
-        android:topRightRadius="16dp" />
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,9 +17,7 @@
         tools:layout_editor_absoluteY="8dp"
         tools:ignore="MissingConstraints">
 
-        <SearchView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+
 
         <fragment
             android:id="@+id/map"

@@ -1,13 +1,11 @@
 package com.example.ecosystem;
 
-import android.database.Cursor;
 import android.os.Bundle;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
-import android.widget.TextView;
 
 public class photo extends AppCompatActivity {
 
@@ -20,7 +18,7 @@ public class photo extends AppCompatActivity {
 
         BottomNavigationView bottomNavigationView;
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
-        bottomNavigationView.setSelectedItemId(R.id.imageButton1);
+        bottomNavigationView.setSelectedItemId(R.id.imageButton2);
         bottomNavigationView.setOnNavigationItemSelectedListener(navListener);
 
     }
@@ -33,20 +31,20 @@ public class photo extends AppCompatActivity {
                     switch (item.getItemId()) {
 
 
-                        case R.id.imageButton:
-                            Intent produit0 = new Intent(photo.this, Stat_balade.class);
-                            startActivity(produit0);
-                            break;
                         case R.id.imageButton1:
-
+                            Intent produit1 = new Intent(photo.this, calendrier.class);
+                            startActivity(produit1);
                             break;
                         case R.id.imageButton2:
-                            Intent produit2 = new Intent(photo.this, localisation.class);
-                            startActivity(produit2);
+
                             break;
                         case R.id.imageButton3:
-                            Intent produit3 = new Intent(photo.this, ProfileActivity.class);
-                            startActivity(produit3);;
+                            Intent produit3 = new Intent(photo.this, localisation.class);
+                            startActivity(produit3);
+                            break;
+                        case R.id.imageButton4:
+                            Intent produit4 = new Intent(photo.this, ProfileActivity.class);
+                            startActivity(produit4);;
                             break;
                     }
 

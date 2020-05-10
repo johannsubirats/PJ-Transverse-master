@@ -32,6 +32,14 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".calendrier"
+            android:label="Calendrier"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT.ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
         <activity android:name=".localisation"
             android:label="Localisation"
             android:theme="@style/AppTheme.ProfileTheme">

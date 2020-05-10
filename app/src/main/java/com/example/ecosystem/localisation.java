@@ -23,7 +23,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 
-import org.osmdroid.util.GeoPoint;
+//import org.osmdroid.util.GeoPoint;
 
 public class localisation extends FragmentActivity implements OnMapReadyCallback {
 

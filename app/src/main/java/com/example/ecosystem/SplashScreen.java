@@ -3,8 +3,9 @@ package com.example.ecosystem;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+
+import org.jetbrains.annotations.Nullable;
 
 public class SplashScreen extends AppCompatActivity {
 

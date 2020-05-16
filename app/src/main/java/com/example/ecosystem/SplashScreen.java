@@ -9,7 +9,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class SplashScreen extends AppCompatActivity {
 
-    private static int temps = 3000;
+    private static int temps = 6000;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

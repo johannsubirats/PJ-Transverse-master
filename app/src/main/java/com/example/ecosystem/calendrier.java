@@ -40,7 +40,7 @@ public class calendrier extends AppCompatActivity {
                     dateDisplay.setText("Date: " + i2 + " / " + (i1+1) + " / " + i + "\n\n" + "Mauvaise balade...vous n'avez dépensé que 100 calories et fait la connaissance de personnes");
                 }
                 else{
-                    dateDisplay.setText("Date: " + i2 + " / " + (i1+1) + " / " + i + "\n\n" + "Quel balade! Vous vous êtes baladé 20 minutes, votre chien a dépensé 500 calories et vous avez rencontré un nouveau chien");
+                    dateDisplay.setText("Date: " + i2 + " / " + (i1+1) + " / " + i + "\n\n" + "Quelle balade! Vous vous êtes baladés 20 minutes, votre chien a dépensé 500 calories et vous avez rencontré un nouveau chien");
                 }
             }
         });
